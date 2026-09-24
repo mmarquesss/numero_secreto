@@ -12,7 +12,7 @@ function verificarChute() {
 
     if (chute === numeroSecreto) {
         resultado.textContent = '🎉 Você acertou!';
-        resultado.style.color = '#51cf66';
+        resultado.style.color = '#51cf';
     } else if (chute > numeroSecreto) {
         resultado.textContent = 'O número secreto é menor!';
         resultado.style.color = '#ffc078';
