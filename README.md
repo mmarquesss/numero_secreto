@@ -34,10 +34,8 @@ Contém toda a lógica do jogo:
 - `verificarChute()`: lida com o clique do botão.
   - Lê e converte o valor do input com `parseInt`.
   - Se não for um número válido (`isNaN`), exibe mensagem de erro em vermelho (`#ff6b6b`).
-  - Se o chute for igual ao número secreto, exibe mensagem de acerto.
+  - Se o chute for igual ao número secreto, exibe mensagem de acerto em verde (`#51cf66`).
   - Se for maior, informa que o número secreto é menor (e vice-versa), em laranja (`#ffc078`).
-
-> **Nota para quem for mexer no código:** a cor de acerto está definida como `'#51cf'`, que não é um hex válido de 6 dígitos (foi cortada, provavelmente deveria ser algo como `#51cf66`). Vale corrigir antes de usar essa cor em outros lugares.
 
 ### `style.css`
 
@@ -49,12 +47,10 @@ Tema escuro simples: fundo `#1e1e2f`, card `#2b2b40` centralizado na tela (via f
 - Sem botão de "jogar novamente" (é preciso recarregar a página).
 - Sem validação de faixa (números fora de 1–10 não são bloqueados, apenas comparados normalmente).
 - Sem testes automatizados.
-- Bug cosmético na cor de acerto (`#51cf`, hex inválido — ver nota acima).
 
 ## Possíveis próximos passos
 
 - Adicionar botão de reiniciar/nova rodada sem recarregar a página.
 - Contar e exibir o número de tentativas.
 - Validar o intervalo do input (1–10) antes de comparar.
-- Corrigir o hex de cor inválido em `app.js`.
 - Extrair a lógica do jogo para funções testáveis e adicionar testes.
